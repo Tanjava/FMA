@@ -11,7 +11,8 @@ body {
     color: #fff;
     background-image: url('https://petkeen.com/wp-content/uploads/2022/01/Cat-halloween-costume_Anton27_Shutterstock-1.jpg');
     background-size: cover;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+}
   
   #nav-bar {
     background-color: rgba(60, 60, 60, 0.3 );
@@ -38,8 +39,6 @@ body {
 
   .container {
     background-color: rgba(0, 0, 0, 0.7 );
-    display: flex;
-    flex-direction: column;
   }
 
   /* .player-container {
@@ -57,7 +56,7 @@ body {
     border-radius: 5px;
   } */
 
-  .player-container, .team-container {
+  #player-container, .team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -79,8 +78,8 @@ body {
 
 .player-content img, .team-content img {
     width:200px;
-    margin-bottom: 10px;;
-   
+    margin-bottom: 10px;
+    border-radius: 5px;   
 }
 
 .nav-btn {
@@ -92,4 +91,5 @@ body {
     color: #fff;
     font-size: 175%;
     margin: 0 20px 100px;
+    border: none;
 }
