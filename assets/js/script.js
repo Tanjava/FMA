@@ -1,13 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.querySelectorAll('.btn');
-    for (let button of buttons) {
-        button.addEventListener('click', function () {
-        });
-    }
 
     displayPlayers();
-})
 
+})
 
 const players = [
     { name: 'Player Name', team: 'Team Name', photo: 'https://i.pinimg.com/564x/65/26/ba/6526ba6d1685954bbb508f69e33dbd06.jpg' },
@@ -44,7 +39,7 @@ function displayPlayers() {
         output += `
         <div class="player-card">
         <div class="player-content">
-        <img src="${players[i].photo}" alt="${players[i].name}">
+        <img class="zoom" src="${players[i].photo}" alt="${players[i].name}">
         <h3>${players[i].name}</h3>
         <p>${players[i].team}</p>
         </div>
